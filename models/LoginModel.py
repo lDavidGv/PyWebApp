@@ -1,9 +1,10 @@
-import bcrypt
 import pymongo
 from pymongo import MongoClient
+import bcrypt
 
 class LoginModel:
     def __init__(self):
+        print("entra al metodo")
         self.client = MongoClient()
         self.db = self.client.PetPin
         self.Users = self.db.users
